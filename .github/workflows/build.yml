@@ -1,7 +1,10 @@
-name: Build and Lint
+name: Build
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -9,26 +12,27 @@ jobs:
   build:
     runs-on: windows-latest
 
-    strategy:
-      matrix:
-        node-version: [17.x, 18.x]
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
+          cache: "npm"
 
       - name: Install dependencies
         run: npm install
 
-      - name: Polyfill for structuredClone
-        run: |
-          echo if (typeof structuredClone === 'undefined') { globalThis.structuredClone = (obj) => { return JSON.parse(JSON.stringify(obj)); }; } > polyfill.js
+      - name: TypeScript type check
+        run: npm run type-check
 
-      - name: Build the project
+      - name: Lint code
+        run: npm run lint
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Build project
         run: npm run build
-
-      - name: Lint the project
-        run: npx eslint . --fix
