@@ -16,7 +16,11 @@ function Home() {
         &#x1F680;
       </p>
       <button type="button" className="btn btn-light btn-lg">
-        <a className="nav-link" aria-current="page" href="/projects">
+        <a
+          className="nav-link"
+          aria-current="page"
+          href="/ProjectPortfolio/projects"
+        >
           <b>MY PROJECTS</b>
         </a>
       </button>
