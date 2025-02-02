@@ -32,7 +32,9 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/" ? "nav-link active" : "nav-link"
+                    location.pathname === "/ProjectPortfolio"
+                      ? "nav-link active"
+                      : "nav-link"
                   }
                   aria-current="page"
                   href="/"
@@ -43,7 +45,7 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/blog"
+                    location.pathname === "/ProjectPortfolio/blog"
                       ? "nav-link active"
                       : "nav-link"
                   }
@@ -55,7 +57,7 @@ function Menu() {
               <li className="nav-item dropdown">
                 <a
                   className={
-                    location.pathname === "/projects"
+                    location.pathname === "/ProjectPortfolio/projects"
                       ? "nav-link active"
                       : "nav-link"
                   }
@@ -67,7 +69,7 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/contact"
+                    location.pathname === "/ProjectPortfolio/contact"
                       ? "nav-link active"
                       : "nav-link"
                   }
