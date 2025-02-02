@@ -9,7 +9,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "constructor-super": "error",
+        "constructor-super": "error"
         // other rules...
     }
 }
