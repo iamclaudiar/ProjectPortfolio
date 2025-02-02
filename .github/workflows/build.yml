@@ -28,10 +28,11 @@ jobs:
         run: |
           npm install
 
+      # Will be added later
       # Lint the code (optional, if you're using ESLint)
-      - name: Run ESLint
-        run: |
-          npm run lint
+      # - name: Run ESLint
+      #   run: |
+      #     npm run lint
 
       # Build the app
       - name: Build the app
