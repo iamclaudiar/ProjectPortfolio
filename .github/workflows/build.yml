@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [17.x, 18.x]
+        node-version: 18.x
 
     steps:
       - uses: actions/checkout@v2
@@ -23,9 +23,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Polyfill for structuredClone
-        run: |
-          echo if (typeof structuredClone === 'undefined') { globalThis.structuredClone = (obj) => { return JSON.parse(JSON.stringify(obj)); }; } > polyfill.js
+      # - name: Add Polyfill for structuredClone
+      #   run: |
+      #     echo "if (typeof structuredClone === 'undefined') { globalThis.structuredClone = (obj) => { return JSON.parse(JSON.stringify(obj)); }; }" > polyfill.js
+      #   shell: cmd
 
       - name: Build the project
         run: npm run build
