@@ -6,7 +6,7 @@ function Menu() {
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/ProjectPortfolio">
             <img
               src="/LOGO.png"
               alt="Logo"
@@ -37,7 +37,7 @@ function Menu() {
                       : "nav-link"
                   }
                   aria-current="page"
-                  href="/"
+                  href="/ProjectPortfolio"
                 >
                   Home
                 </a>
@@ -49,7 +49,7 @@ function Menu() {
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/blog"
+                  href="/ProjectPortfolio/blog"
                 >
                   Blog
                 </a>
@@ -61,7 +61,7 @@ function Menu() {
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/projects"
+                  href="/ProjectPortfolio/projects"
                 >
                   Projects
                 </a>
@@ -73,7 +73,7 @@ function Menu() {
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/contact"
+                  href="/ProjectPortfolio/contact"
                 >
                   Contact
                 </a>
