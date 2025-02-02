@@ -45,7 +45,7 @@ jobs:
 
       # Upload build artifacts (optional, for deployment)
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: react-build
           path: ./dist/ # The path to build output directory
