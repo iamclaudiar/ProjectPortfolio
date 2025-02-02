@@ -1,0 +1,52 @@
+name: React TypeScript Build
+
+on:
+  push:
+    branches:
+      - main # Workflow will trigger on push to the 'main' branch
+  pull_request:
+    branches:
+      - main # Workflow will trigger for PRs targeting the 'main' branch
+
+jobs:
+  build:
+    runs-on: windows-latest # This will use a Windows runner for the workflow
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16" # Specify the Node.js version you want to use
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          npm install
+
+      # Lint the code (optional, if you're using ESLint)
+      - name: Run ESLint
+        run: |
+          npm run lint
+
+      # Build the app
+      - name: Build the app
+        run: |
+          npm run build
+
+      # Run tests (optional, if you're using Jest or similar)
+      - name: Run tests
+        run: |
+          npm test -- --coverage
+
+      # Upload build artifacts (optional, for deployment)
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: react-build
+          path: ./dist/ # The path to build output directory
+
