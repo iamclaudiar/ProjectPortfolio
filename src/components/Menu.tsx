@@ -8,7 +8,7 @@ function Menu() {
         <div className="container-fluid">
           <a className="navbar-brand" href="/ProjectPortfolio">
             <img
-              src="/LOGO.png"
+              src="/ProjectPortfolio/LOGO.png"
               alt="Logo"
               width="30"
               height="30"
@@ -54,7 +54,7 @@ function Menu() {
                   Blog
                 </a>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item">
                 <a
                   className={
                     location.pathname === "/ProjectPortfolio/projects"

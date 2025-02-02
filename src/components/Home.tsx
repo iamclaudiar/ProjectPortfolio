@@ -1,7 +1,11 @@
 function Home() {
   return (
     <div className="text-center">
-      <img src="/Banner.png" className="img-fluid" alt="Profile picture" />
+      <img
+        src="/ProjectPortfolio/Banner.png"
+        className="img-fluid"
+        alt="Profile picture"
+      />
       <p className="text-center fs-1 fw-bold">ABOUT ME</p>
       <p className="fs-5">
         I'm Claudia and this is my project portfolio website! &#x1F60A; <br />
