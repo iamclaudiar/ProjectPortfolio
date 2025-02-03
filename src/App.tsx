@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
@@ -16,15 +16,13 @@ function App() {
     >
       <Menu />
       <div className="flex-grow-1">
-        <BrowserRouter basename="/ProjectPortfolio">
-          <Routes>
-            {/* <Route index element={<Home />} /> */}
-            <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          {/* <Route index element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
       </div>
       <Footer />
     </div>
