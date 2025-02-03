@@ -19,7 +19,7 @@ function Home() {
         <a
           className="nav-link"
           aria-current="page"
-          href="/webdeveloper_portfolio/projects"
+          href="/webdeveloper_portfolio/#/projects"
         >
           <b>MY PROJECTS</b>
         </a>
