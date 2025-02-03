@@ -45,11 +45,11 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/ProjectPortfolio/blog"
+                    location.pathname === "/ProjectPortfolio/#/blog"
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/ProjectPortfolio/blog"
+                  href="/ProjectPortfolio/#/blog"
                 >
                   Blog
                 </a>
@@ -57,11 +57,11 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/ProjectPortfolio/projects"
+                    location.pathname === "/ProjectPortfolio/#/projects"
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/ProjectPortfolio/projects"
+                  href="/ProjectPortfolio/#/projects"
                 >
                   Projects
                 </a>
@@ -69,11 +69,11 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/ProjectPortfolio/contact"
+                    location.pathname === "/ProjectPortfolio/#/contact"
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/ProjectPortfolio/contact"
+                  href="/ProjectPortfolio/#/contact"
                 >
                   Contact
                 </a>
