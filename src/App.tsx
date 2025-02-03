@@ -16,13 +16,13 @@ function App() {
     >
       <Menu />
       <div className="flex-grow-1">
-        <BrowserRouter>
+        <BrowserRouter basename="/ProjectPortfolio">
           <Routes>
             {/* <Route index element={<Home />} /> */}
-            <Route path="/ProjectPortfolio" element={<Home />} />
-            <Route path="/ProjectPortfolio/blog" element={<Blog />} />
-            <Route path="/ProjectPortfolio/contact" element={<Contact />} />
-            <Route path="/ProjectPortfolio/projects" element={<Projects />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </BrowserRouter>
       </div>
