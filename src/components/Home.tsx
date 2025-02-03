@@ -2,7 +2,7 @@ function Home() {
   return (
     <div className="text-center">
       <img
-        src="/ProjectPortfolio/Banner.png"
+        src="/webdeveloper_portfolio/Banner.png"
         className="img-fluid"
         alt="Profile picture"
       />
@@ -19,7 +19,7 @@ function Home() {
         <a
           className="nav-link"
           aria-current="page"
-          href="/ProjectPortfolio/projects"
+          href="/webdeveloper_portfolio/projects"
         >
           <b>MY PROJECTS</b>
         </a>

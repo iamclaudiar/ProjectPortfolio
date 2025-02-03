@@ -6,9 +6,9 @@ function Menu() {
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/ProjectPortfolio">
+          <a className="navbar-brand" href="/webdeveloper_portfolio">
             <img
-              src="/ProjectPortfolio/LOGO.png"
+              src="/webdeveloper_portfolio/LOGO.png"
               alt="Logo"
               width="30"
               height="30"
@@ -32,12 +32,12 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/ProjectPortfolio"
+                    location.pathname === "/webdeveloper_portfolio"
                       ? "nav-link active"
                       : "nav-link"
                   }
                   aria-current="page"
-                  href="/ProjectPortfolio"
+                  href="/webdeveloper_portfolio"
                 >
                   Home
                 </a>
@@ -45,11 +45,11 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/ProjectPortfolio/#/blog"
+                    location.pathname === "/webdeveloper_portfolio/#/blog"
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/ProjectPortfolio/#/blog"
+                  href="/webdeveloper_portfolio/#/blog"
                 >
                   Blog
                 </a>
@@ -57,11 +57,11 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/ProjectPortfolio/#/projects"
+                    location.pathname === "/webdeveloper_portfolio/#/projects"
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/ProjectPortfolio/#/projects"
+                  href="/webdeveloper_portfolio/#/projects"
                 >
                   Projects
                 </a>
@@ -69,11 +69,11 @@ function Menu() {
               <li className="nav-item">
                 <a
                   className={
-                    location.pathname === "/ProjectPortfolio/#/contact"
+                    location.pathname === "/webdeveloper_portfolio/#/contact"
                       ? "nav-link active"
                       : "nav-link"
                   }
-                  href="/ProjectPortfolio/#/contact"
+                  href="/webdeveloper_portfolio/#/contact"
                 >
                   Contact
                 </a>
