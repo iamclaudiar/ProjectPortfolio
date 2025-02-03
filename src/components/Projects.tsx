@@ -1,7 +1,7 @@
 function Projects() {
   return (
     <div
-      className="bg-body-tertiary text-white min-vh-100"
+      className="bg-body-tertiary text-white min-vh-100 container-fluid px-4"
       data-bs-theme="dark"
     >
       <p className="text-center fs-1 fw-bold">PROJECTS</p>
